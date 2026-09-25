@@ -1,0 +1,221 @@
+<!--
+HTML FORMS - IMPORTANT TERMS
+
+1. <form> = Form
+   Creates a form that contains user input controls.
+
+2. <input> = Input Field
+   Creates a field where the user can enter or select information.
+
+3. <label> = Label
+   Provides a name/description for an input field.
+
+4. <input type="text">
+    Creates a normal text input.
+
+5. <input type="email">
+    Creates an email input.
+
+6. <input type="password">
+    Creates a password input.
+
+7. type = Attribute
+    Specifies what type of input field should be created.
+   
+8. placeholder = Hint text
+    Shows a temporary hint inside an input field.
+
+Example:
+placeholder="Enter your name"
+
+9. name = Form Field Name
+    Identifies the input when form data is submitted.
+
+Example:
+name="email"
+ 
+10. id = Unique Identifier
+    Gives an element a unique identity.
+
+11. for = Label Connection
+    Connects a <label> to an input using the input's id.
+
+Example:
+
+<label for="username">Name:</label>
+<input type="text" id="username">
+
+12. <textarea> = Text Area
+    Creates a multi-line text input field.
+
+13. rows = Number of visible rows.
+
+14. cols = Number of visible columns.
+
+Example:
+<textarea rows="4" cols="30"></textarea>
+
+15.  Radio Button
+
+<input type="radio">
+    Creates a radio button.
+
+name
+    Radio buttons with the same name belong to the same group.
+
+value
+    Represents the value of the selected option.
+
+IMPORTANT:
+Same name → only one option can be selected.
+            Radio buttons with the same name
+            belong to the same group,
+            so the user can select only one
+            option from that group.
+Example:
+name="gender"
+
+16.  Checkbox
+
+<input type="checkbox">
+    Creates a checkbox.
+
+Checkboxes allow:
+    Multiple options to be selected.
+
+Radio buttons:
+    Usually one option from a group.
+
+Checkboxes:
+    Zero, one, or multiple options.
+
+17.     <select> = Dropdown
+    Creates a dropdown list.
+
+<option> = Option
+    Creates an option inside the dropdown.
+
+value = Value of the option
+    Represents the value sent when the form is submitted.
+
+IMPORTANT:
+
+<select> → dropdown
+<option> → individual option
+
+18.     <input type="submit"> = Submit Button
+
+<input type="submit">
+    Creates a button used to submit the form.
+
+value
+    Sets the text displayed on the submit button.
+
+Example:
+<input type="submit" value="Submit">
+
+19.     <input type="reset">
+    Creates a reset button.
+
+    It clears the values entered in the form
+    and returns the fields to their default values.
+
+Example:
+<input type="reset" value="Clear Form">
+-->
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HTML Forms</h1>
+
+<form>
+
+    <label for="username">Name:</label>
+    <input type="text"
+           id="username"
+           name="username"
+           placeholder="Enter your name">
+
+    <br><br>
+
+    <label for="email">Email:</label>
+    <input type="email"
+           id="email"
+           name="email"
+           placeholder="Enter your email">
+
+    <br><br>
+
+    <label for="password">Password:</label>
+    <input type="password"
+           id="password"
+           name="password"
+           placeholder="Enter your password">
+    <br><br>
+     <label for="message">Message:</label>
+
+    <br>
+
+    <textarea id="message" name="message" rows="4" cols="30"
+        placeholder="Enter your message"></textarea>       
+    <br><br>
+
+    <label>Gender:</label>
+
+    <br>
+
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+
+    <br>
+
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+    <br><br>
+
+    <label>Skills:</label>
+
+    <br>
+
+    <input type="checkbox" id="html" name="skills" value="html">
+    <label for="html">HTML</label>
+
+    <br>
+
+    <input type="checkbox" id="css" name="skills" value="css">
+    <label for="css">CSS</label>
+
+    <br>
+
+    <input type="checkbox" id="javascript" name="skills" value="javascript">
+    <label for="javascript">JavaScript</label>
+    <br><br>
+
+<label for="course">Choose your course:</label>
+
+<select id="course" name="course">
+
+    <option value="cse">Computer Science</option>
+    <option value="it">Information Technology</option>
+    <option value="ds">Data Science</option>
+    <option value="ece">Electronics</option>
+</select>   
+<br><br>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Clear Form">
+</form>
+</body>
+</html>

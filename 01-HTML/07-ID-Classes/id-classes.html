@@ -1,0 +1,159 @@
+<!--
+HTML ID AND CLASSES - IMPORTANT TERMS
+
+1. id = Unique Identifier
+   Gives an HTML element a unique identity.
+
+2. class = Class Name
+   Groups one or more HTML elements together.
+
+3. id attribute
+   Used to uniquely identify an element.
+
+4. class attribute
+   Used to assign one or more elements to a class.
+
+IMPORTANT:
+
+id → identifies one specific element
+class → groups elements together
+
+Example of id:
+
+<h2 id="heading">My Heading</h2>
+
+id="heading"
+    Gives this element a unique identifier.
+
+CLASS ATTRIBUTE
+
+class = Class Name
+
+Used to group multiple HTML elements
+under the same class.
+
+Example:
+
+<p class="highlight">Paragraph 1</p>
+<p class="highlight">Paragraph 2</p>
+<p class="highlight">Paragraph 3</p>
+
+All three elements belong to the
+"highlight" class.
+
+IMPORTANT:
+
+id → usually identifies one specific element
+class → can be used by multiple elements
+
+MULTIPLE CLASSES
+
+An HTML element can have more than one class.
+
+Example:
+
+<p class="highlight important">
+    This paragraph has two classes.
+</p>
+
+Here:
+    highlight → first class
+    important → second class
+
+IMPORTANT:
+
+Multiple classes are separated by spaces.
+
+class="class1 class2 class3"
+
+ID AND CLASS TOGETHER
+
+An element can have both an id and a class.
+
+Example:
+
+<h2 id="main-title" class="highlight">
+    My Web Development Journey
+</h2>
+
+id:
+    Identifies the specific element.
+
+class:
+    Groups the element with other elements.
+
+IMPORTANT:
+
+An element can have:
+    One id attribute
+    One class attribute containing multiple class names
+
+Example:
+
+<h2 id="main-title" class="highlight important">
+    My Heading
+</h2>
+
+ID WITH LINK / BOOKMARK
+
+An id can be used as a bookmark
+within a webpage.
+
+Example:
+
+<h2 id="projects">My Projects</h2>
+
+<a href="#projects">
+    Go to My Projects
+</a>
+
+href="#projects"
+    Jumps to the element with
+    id="projects".
+
+IMPORTANT:
+
+id="projects" → bookmark/target
+
+href="#projects" → link to the target
+-->
+
+
+
+    
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML ID and Classes</title>
+</head>
+
+<body>
+
+    <h1>HTML ID and Classes</h1>
+    <h2 id="heading">My Heading</h2>
+    <p class="highlight">This is paragraph 1.</p>
+    <p class="highlight">This is paragraph 2.</p>
+    <p class="highlight">This is paragraph 3.</p>
+    <h2>Multiple Classes</h2>
+
+    <p class="highlight important">This paragraph has two classes.</p>
+
+    <p class="highlight">This paragraph has one class.</p>
+    <h2 id="main-title" class="highlight">My Web Development Journey</h2>
+
+    <p class="highlight important">
+    I am learning HTML step by step.
+    </p>
+    <a href="#projects">Go to My Projects</a>
+    <h2 id="projects">My Projects</h2>
+
+    <p>
+        Here I will add my web development projects.
+    </p>
+</body>
+
+</html>

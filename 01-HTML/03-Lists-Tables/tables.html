@@ -1,0 +1,108 @@
+<!--
+HTML TABLES - IMPORTANT TERMS
+
+1. <table> = Table
+   Creates the table.
+
+2. <tr> = Table Row
+   Creates a row in the table.
+
+3. <th> = Table Header
+   Creates a heading cell.
+
+4. <td> = Table Data
+   Creates a normal data cell.
+5. <thead> = Table Head
+    Contains the heading rows.
+
+6. <tbody> = Table Body
+    Contains the main data.
+
+7. <tfoot> = Table Foot
+   Contains summary/footer information.
+8. colspan = Column Span
+   Allows one cell to cover multiple columns.
+
+9. rowspan = Row Span
+   Allows one cell to cover multiple rows.
+
+IMPORTANT:
+colspan="2" → cell covers 2 columns
+rowspan="2" → cell covers 2 rows
+
+Memory:
+colspan → goes across →
+rowspan → goes down ↓
+   IMPORTANT:
+<table> → table
+<tr> → table row
+<th> → table heading
+<td> → table data
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tables</title>
+</head>
+<body>
+    <h1>HTML Tables</h1>
+
+<table>
+    <thead>
+            <tr>
+                <th>Name</th>
+                <th>Subject</th>
+                <th>Marks</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Prakriti</td>
+                <td>HTML</td>
+                <td>90</td>
+            </tr>
+
+            <tr>
+                <td>Rahul</td>
+                <td>CSS</td>
+                <td>85</td>
+            </tr>
+
+            <tr>
+                <td>Ananya</td>
+                <td>JavaScript</td>
+                <td>92</td>
+            </tr>
+        </tbody>
+
+     <tfoot>
+            <tr>
+                <td colspan="2">Average Marks</td>
+                <td>89</td>
+            </tr>
+        </tfoot>
+    <h2>Rowspan Example</h2>
+
+<table>
+
+    <tr>
+        <th>Name</th>
+        <th>Subject</th>
+    </tr>
+
+    <tr>
+        <td rowspan="2">Prakriti</td>
+        <td>HTML</td>
+    </tr>
+
+    <tr>
+        <td>CSS</td>
+    </tr>
+
+</table>
+</table>
+</body>
+</html>
