@@ -1,0 +1,78 @@
+<!--
+HTML ACCESSIBILITY - IMPORTANT TERMS
+
+1. alt
+   Provides alternative text for images.
+
+2. label
+   Describes a form input.
+
+3. semantic HTML
+   Uses meaningful HTML elements.
+
+4. lang
+   Specifies the language of the webpage.
+
+5. Accessible HTML
+   Makes webpages easier to use for people
+   with different abilities.
+
+IMPORTANT:
+
+alt    → image description
+label  → form control description
+lang   → page language
+semantic elements → meaningful structure
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HTML Accessibility</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>HTML Accessibility</h1>
+    </header>
+
+    <main>
+
+        <h2>Accessible Image</h2>
+
+        <img
+            src="image.png"
+            alt="A sample image"
+            width="300">
+
+        <h2>Accessible Form</h2>
+
+        <form>
+
+            <label for="name">Your Name:</label>
+            <input
+                type="text"
+                id="name"
+                name="name">
+
+            <br><br>
+
+            <button type="submit">
+                Submit
+            </button>
+
+        </form>
+
+    </main>
+
+    <footer>
+        <p>My Web Development Journey</p>
+    </footer>
+
+</body>
+
+</html>
