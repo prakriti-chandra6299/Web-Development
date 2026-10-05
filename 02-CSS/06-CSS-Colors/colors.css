@@ -1,0 +1,34 @@
+/*
+CSS COLORS
+
+Different ways to specify colors:
+
+1. Color Name
+2. HEX
+3. RGB
+
+The 'color' property changes text color.
+
+The 'background-color' property changes
+the background color.
+*/
+
+/* Color Name */
+.name {
+    color: red;
+}
+
+/* HEX Color */
+.hex {
+    color: #0000ff;
+}
+
+/* RGB Color */
+.rgb {
+    color: rgb(0, 128, 0);
+}
+
+/* Background Color */
+.box {
+    background-color: yellow;
+}

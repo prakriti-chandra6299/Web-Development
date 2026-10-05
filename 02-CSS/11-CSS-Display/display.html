@@ -1,0 +1,73 @@
+<!--
+CSS DISPLAY - IMPORTANT TERMS
+
+The display property controls how an HTML
+element is shown and how it takes up space.
+
+1. block
+   Takes the full available width.
+   Starts on a new line.
+
+   Examples:
+   <div>
+   <p>
+   <h1>
+
+2. inline
+   Takes only the required width.
+   Does not start on a new line.
+
+   Examples:
+   <span>
+   <a>
+
+3. inline-block
+   Behaves like an inline element,
+   but allows width and height to be set.
+
+IMPORTANT:
+
+display: block;
+→ New line + full available width
+
+display: inline;
+→ Same line + required width
+
+display: inline-block;
+→ Same line + can set width and height
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Display</title>
+
+    <link rel="stylesheet" href="display.css">
+
+</head>
+
+<body>
+
+    <h1>CSS Display Property</h1>
+
+    <div class="block">Block Element</div>
+
+    <div class="block">Another Block Element</div>
+
+    <span class="inline">Inline Element</span>
+    <span class="inline">Another Inline Element</span>
+
+    <br><br>
+
+    <span class="inline-block">Inline-Block 1</span>
+    <span class="inline-block">Inline-Block 2</span>
+
+</body>
+
+</html>

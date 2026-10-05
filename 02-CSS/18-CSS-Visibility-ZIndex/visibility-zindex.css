@@ -1,0 +1,54 @@
+/*
+CSS VISIBILITY & Z-INDEX
+
+visibility:
+Controls whether an element is visible.
+
+z-index:
+Controls the stacking order of elements.
+*/
+
+.box {
+
+    width: 150px;
+
+    height: 100px;
+
+    padding: 20px;
+
+    position: absolute;
+
+}
+
+/* Lower stacking order */
+.box1 {
+
+    background-color: lightblue;
+
+    left: 50px;
+
+    top: 150px;
+
+    z-index: 1;
+
+}
+
+/* Higher stacking order */
+.box2 {
+
+    background-color: lightcoral;
+
+    left: 100px;
+
+    top: 190px;
+
+    z-index: 2;
+
+}
+
+/* Element is hidden but space remains */
+.hidden {
+
+    visibility: hidden;
+
+}

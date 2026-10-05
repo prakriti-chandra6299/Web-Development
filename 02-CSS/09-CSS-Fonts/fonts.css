@@ -1,0 +1,37 @@
+/*
+CSS FONTS
+
+Fonts control the appearance of text.
+
+Common font properties:
+
+font-family
+font-size
+font-style
+font-weight
+
+Text alignment:
+
+text-align
+*/
+
+/* Change font type and size */
+.normal {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+}
+
+/* Italic text */
+.italic {
+    font-style: italic;
+}
+
+/* Bold text */
+.bold {
+    font-weight: bold;
+}
+
+/* Center the text */
+.center {
+    text-align: center;
+}

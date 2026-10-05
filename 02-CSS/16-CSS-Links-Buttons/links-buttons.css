@@ -1,0 +1,57 @@
+/*
+CSS LINKS & BUTTONS
+
+Pseudo-classes allow us to style an element
+based on its state.
+
+Common link states:
+
+:link
+:visited
+:hover
+:active
+*/
+
+/* Unvisited link */
+.link:link {
+    color: blue;
+}
+
+/* Visited link */
+.link:visited {
+    color: purple;
+}
+
+/* Mouse is over the link */
+.link:hover {
+    color: red;
+}
+
+/* Link is being clicked */
+.link:active {
+    color: green;
+}
+
+/* Button styling */
+.btn {
+
+    background-color: blue;
+
+    color: white;
+
+    padding: 10px 20px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+}
+
+/* Button hover effect */
+.btn:hover {
+
+    background-color: darkblue;
+
+}

@@ -1,0 +1,28 @@
+/*
+CSS BOX MODEL
+
+The Box Model consists of:
+
+Content
+Padding
+Border
+Margin
+*/
+
+.box {
+
+    /* Content */
+    width: 300px;
+
+    /* Space inside the border */
+    padding: 20px;
+
+    /* Border around the element */
+    border: 5px solid black;
+
+    /* Space outside the border */
+    margin: 30px;
+
+    background-color: lightblue;
+
+}

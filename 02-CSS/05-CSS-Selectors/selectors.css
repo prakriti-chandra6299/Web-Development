@@ -1,0 +1,27 @@
+/*
+CSS SELECTORS
+
+1. Element Selector
+   Selects HTML elements by their tag name.
+
+2. ID Selector
+   Uses # followed by the ID name.
+
+3. Class Selector
+   Uses . followed by the class name.
+*/
+
+/* Element Selector */
+p {
+    font-size: 18px;
+}
+
+/* ID Selector */
+#intro {
+    color: blue;
+}
+
+/* Class Selector */
+.highlight {
+    color: red;
+}

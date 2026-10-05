@@ -1,0 +1,38 @@
+/*
+CSS FLEXBOX
+
+Flexbox makes it easier to arrange elements
+inside a container.
+*/
+
+.container {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    background-color: lightgray;
+
+    padding: 20px;
+
+}
+
+.box {
+
+    width: 100px;
+
+    height: 100px;
+
+    background-color: lightblue;
+
+    border: 2px solid black;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}

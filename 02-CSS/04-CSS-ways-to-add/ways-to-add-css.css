@@ -1,0 +1,15 @@
+/*
+WAYS TO ADD CSS
+
+This file demonstrates External CSS.
+
+External CSS is written in a separate
+.css file and connected to HTML using:
+
+<link rel="stylesheet" href="ways-to-add-css.css">
+*/
+
+p {
+    color: blue;
+    font-size: 20px;
+}

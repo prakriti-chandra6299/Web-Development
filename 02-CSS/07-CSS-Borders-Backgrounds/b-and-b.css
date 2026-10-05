@@ -1,0 +1,27 @@
+/*
+CSS BORDERS AND BACKGROUNDS
+
+Border:
+border: width style color;
+
+Example:
+border: 2px solid black;
+
+Background:
+background-color changes the background color.
+
+border-radius:
+Rounds the corners of an element.
+*/
+
+.box {
+
+    border: 3px solid black;
+
+    border-radius: 15px;
+
+    background-color: lightblue;
+
+    padding: 20px;
+
+}

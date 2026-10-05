@@ -1,0 +1,27 @@
+/*
+HOW CSS WORKS
+
+A CSS rule has three main parts:
+
+selector {
+    property: value;
+}
+
+Example:
+
+h1 {
+    color: blue;
+}
+
+selector → h1
+property → color
+value    → blue
+*/
+
+h1 {
+    color: blue;
+}
+
+p {
+    color: green;
+}

@@ -1,0 +1,86 @@
+<!--
+CSS SELECTORS - IMPORTANT TERMS
+
+A CSS selector is used to select the HTML
+element that we want to style.
+
+COMMON CSS SELECTORS:
+
+1. Element Selector
+   Selects elements using their tag name.
+
+   Example:
+   p {
+       color: blue;
+   }
+
+2. ID Selector
+   Selects an element using its id.
+
+   Syntax:
+   #id-name
+
+   Example:
+   #intro {
+       color: green;
+   }
+
+3. Class Selector
+   Selects elements using their class.
+
+   Syntax:
+   .class-name
+
+   Example:
+   .highlight {
+       color: red;
+   }
+
+IMPORTANT:
+
+Element → p
+ID      → #intro
+Class   → .highlight
+
+An ID should normally be unique on a page.
+A class can be used on multiple elements.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Selectors</title>
+
+    <link rel="stylesheet" href="selectors.css">
+
+</head>
+
+<body>
+
+    <h1>CSS Selectors</h1>
+
+    <p>
+        This paragraph uses an element selector.
+    </p>
+
+    <p id="intro">
+        This paragraph uses an ID selector.
+    </p>
+
+    <p class="highlight">
+        This paragraph uses a class selector.
+    </p>
+
+    <p class="highlight">
+        This paragraph also uses the same class.
+    </p>
+
+</body>
+
+</html>

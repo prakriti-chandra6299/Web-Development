@@ -1,0 +1,39 @@
+/*
+CSS NAVIGATION MENU
+
+We use CSS to turn a normal list of links
+into a horizontal navigation menu.
+*/
+
+/* Remove default list styling */
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Create the navigation bar */
+nav {
+    background-color: black;
+}
+
+/* Put list items on the same line */
+li {
+    display: inline;
+}
+
+/* Style the links */
+li a {
+    color: white;
+
+    text-decoration: none;
+
+    padding: 15px;
+
+    display: inline-block;
+}
+
+/* Change link appearance on hover */
+li a:hover {
+    background-color: gray;
+}

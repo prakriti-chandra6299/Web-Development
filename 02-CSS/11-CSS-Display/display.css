@@ -1,0 +1,29 @@
+/*
+CSS DISPLAY PROPERTY
+
+The display property controls how an
+element behaves on the webpage.
+*/
+
+/* Block element */
+.block {
+    display: block;
+    background-color: lightblue;
+    margin: 5px;
+}
+
+/* Inline element */
+.inline {
+    display: inline;
+    background-color: lightgreen;
+    margin: 5px;
+}
+
+/* Inline-block element */
+.inline-block {
+    display: inline-block;
+    background-color: lightcoral;
+    width: 150px;
+    height: 50px;
+    margin: 5px;
+}

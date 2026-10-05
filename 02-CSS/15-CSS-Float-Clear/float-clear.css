@@ -1,0 +1,68 @@
+/*
+CSS FLOAT & CLEAR
+
+float:
+Moves an element to the left or right.
+
+clear:
+Prevents an element from being affected
+by floated elements.
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+
+    width: 900px;
+
+    border: 3px solid black;
+
+    margin: 30px auto;
+
+    padding: 15px;
+
+}
+
+.item {
+
+    border: 2px solid gray;
+
+    margin: 10px;
+
+    padding: 15px;
+
+}
+
+/* Move the fruit section to the right */
+#fruit {
+
+    float: right;
+
+    width: 48%;
+
+}
+
+/* Move the computer section to the left */
+#computer {
+
+    float: left;
+
+    width: 48%;
+
+}
+
+/* Prevent this section from being beside floated elements */
+#stationery {
+
+    clear: both;
+
+}
+
+/* Align the text */
+.item p {
+
+    text-align: justify;
+
+}

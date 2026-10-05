@@ -1,0 +1,71 @@
+<!--
+CSS BOX MODEL - IMPORTANT TERMS
+
+Every HTML element is treated as a box.
+
+The CSS Box Model has 4 parts:
+
+1. Content
+   The actual text, image, or other content
+   inside the element.
+
+2. Padding
+   Space between the content and the border.
+
+3. Border
+   A line surrounding the padding and content.
+
+4. Margin
+   Space outside the border.
+
+BOX MODEL:
+
+        Margin
+    ┌───────────────┐
+    │    Border     │
+    │  ┌─────────┐  │
+    │  │ Padding │  │
+    │  │ ┌─────┐ │  │
+    │  │ │Content│ │  │
+    │  │ └─────┘ │  │
+    │  └─────────┘  │
+    └───────────────┘
+
+IMPORTANT:
+
+Content → Actual content
+Padding → Space inside the border
+Border  → Line around the element
+Margin  → Space outside the border
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Box Model</title>
+
+    <link rel="stylesheet" href="box-model.css">
+
+</head>
+
+<body>
+
+    <h1>CSS Box Model</h1>
+
+    <div class="box">
+
+        <p>
+            This is the content of the box.
+        </p>
+
+    </div>
+
+</body>
+
+</html>

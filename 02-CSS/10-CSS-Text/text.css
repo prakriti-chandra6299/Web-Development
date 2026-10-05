@@ -1,0 +1,26 @@
+/*
+CSS TEXT PROPERTIES
+
+Text properties allow us to control
+the appearance and spacing of text.
+*/
+
+/* Text alignment */
+.center {
+    text-align: center;
+}
+
+/* Text decoration */
+.underline {
+    text-decoration: underline;
+}
+
+/* Text transformation */
+.uppercase {
+    text-transform: uppercase;
+}
+
+/* Space between lines */
+.spacing {
+    line-height: 1.8;
+}

@@ -1,0 +1,31 @@
+/*
+CSS DEVELOPER TOOLS
+
+This file gives us some CSS that we can
+inspect and modify using the browser's
+Developer Tools.
+*/
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: blue;
+}
+
+.intro {
+    color: green;
+    font-size: 20px;
+}
+
+.box {
+    width: 300px;
+    padding: 20px;
+    border: 2px solid black;
+    background-color: lightblue;
+}
+
+.box h2 {
+    color: red;
+}

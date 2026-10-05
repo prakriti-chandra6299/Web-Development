@@ -1,0 +1,71 @@
+<!--
+CSS VISIBILITY & Z-INDEX - IMPORTANT TERMS
+
+1. visibility
+   Controls whether an element is visible.
+
+2. visibility: visible
+   The element is visible.
+   This is the default.
+
+3. visibility: hidden
+   The element becomes invisible,
+   but its space is still preserved.
+
+4. display: none
+   Removes the element completely.
+   Its space is also removed.
+
+5. z-index
+   Controls which element appears
+   in front of another element.
+
+   A higher z-index appears above
+   a lower z-index.
+
+IMPORTANT:
+
+visibility: hidden;
+→ Hidden but space remains.
+
+display: none;
+→ Hidden and space is removed.
+
+z-index:
+→ Controls stacking order.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Visibility and Z-Index</title>
+
+    <link rel="stylesheet" href="visibility-zindex.css">
+
+</head>
+
+<body>
+
+    <h1>Visibility & Z-Index</h1>
+
+    <div class="box box1">
+        Box 1
+    </div>
+
+    <div class="box box2">
+        Box 2
+    </div>
+
+    <p class="hidden">
+        This paragraph is hidden but its space remains.
+    </p>
+
+</body>
+
+</html>

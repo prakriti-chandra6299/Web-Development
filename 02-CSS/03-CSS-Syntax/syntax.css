@@ -1,0 +1,31 @@
+/*
+CSS SYNTAX
+
+Basic structure:
+
+selector {
+    property: value;
+}
+
+Example:
+
+h1 {
+    color: blue;
+}
+
+Here:
+
+h1     → Selector
+color  → Property
+blue   → Value
+*/
+
+h1 {
+    color: blue;
+    font-size: 36px;
+}
+
+p {
+    color: green;
+    font-size: 20px;
+}

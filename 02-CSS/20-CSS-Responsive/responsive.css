@@ -1,0 +1,53 @@
+/*
+CSS RESPONSIVE DESIGN
+
+A responsive webpage adjusts its layout
+according to the screen size.
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+
+    display: flex;
+
+    gap: 20px;
+
+    width: 80%;
+
+    margin: auto;
+
+}
+
+.box {
+
+    flex: 1;
+
+    padding: 40px;
+
+    background-color: lightblue;
+
+    border: 2px solid black;
+
+    text-align: center;
+
+}
+
+/*
+When the screen becomes smaller,
+the boxes are arranged vertically.
+*/
+
+@media (max-width: 600px) {
+
+    .container {
+
+        flex-direction: column;
+
+        width: 95%;
+
+    }
+
+}

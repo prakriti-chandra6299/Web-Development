@@ -1,0 +1,40 @@
+/*
+CSS POSITION
+
+The position property controls how an
+element is positioned on the webpage.
+*/
+
+.container {
+    position: relative;
+
+    width: 400px;
+    height: 250px;
+
+    border: 2px solid black;
+}
+
+/* Relative positioning */
+.relative {
+    position: relative;
+
+    left: 30px;
+    top: 20px;
+
+    background-color: lightblue;
+}
+
+/* Absolute positioning */
+.absolute {
+    position: absolute;
+
+    right: 20px;
+    bottom: 20px;
+
+    background-color: lightgreen;
+}
+
+.box {
+    padding: 20px;
+    width: 100px;
+}
