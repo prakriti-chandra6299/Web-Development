@@ -1,0 +1,79 @@
+
+<!--
+IMPORTANT TERMS
+1. object-fit: Controls how an image fits inside its container.
+2. cover: Fills the container while preserving proportions; crops if needed.
+3. contain: Shows the entire image; empty space may remain.
+4. fill: Fills the container and may distort the image.
+5. object-position: Controls which part of the image is visible.
+6. aspect ratio: The proportional relationship between width and height.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Object Fit Practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>CSS Object-fit Property</h1>
+    <p>Compare how the same image looks with different values.</p>
+
+    <section class="gallery">
+
+        <article class="card">
+            <h2>Original</h2>
+            <img
+                src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800"
+                alt="Mountain landscape"
+                class="original"
+            >
+            <p>Natural image proportions</p>
+        </article>
+
+        <article class="card">
+            <h2>Object-fit: Cover</h2>
+            <img
+                src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800"
+                alt="Mountain landscape"
+                class="cover"
+            >
+            <p>Fills the box; some parts may be cropped</p>
+        </article>
+
+        <article class="card">
+            <h2>Object-fit: Contain</h2>
+            <img
+                src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800"
+                alt="Mountain landscape"
+                class="contain"
+            >
+            <p>Entire image visible</p>
+        </article>
+
+        <article class="card">
+            <h2>Object-fit: Fill</h2>
+            <img
+                src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800"
+                alt="Mountain landscape"
+                class="fill"
+            >
+            <p>Stretches to fit the box</p>
+        </article>
+
+    </section>
+
+    <section class="position-demo">
+        <h2>Experiment with Object Position</h2>
+        <img
+            src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800"
+            alt="Mountain landscape positioned toward the right"
+            class="position"
+        >
+    </section>
+
+</body>
+</html>

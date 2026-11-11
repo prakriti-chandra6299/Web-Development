@@ -1,0 +1,125 @@
+
+/*
+IMPORTANT TERMS
+1. @keyframes: Defines animation stages.
+2. from and to: Define the start and end states.
+3. 0%, 50%, 100%: Define stages by percentage.
+4. infinite: Repeats the animation continuously.
+5. alternate: Reverses direction on alternate cycles.
+6. animation-play-state: Controls running or paused state.
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f6f9;
+    padding: 35px 15px;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+p {
+    color: #555;
+    margin-bottom: 35px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 50px auto;
+}
+
+.box {
+    width: 110px;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    border-radius: 12px;
+}
+
+/* Animation 1: Move horizontally */
+.slide {
+    background-color: #6655dd;
+    animation: slide 2s ease-in-out infinite alternate;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(-20px);
+    }
+
+    to {
+        transform: translateX(20px);
+    }
+}
+
+/* Animation 2: Bounce vertically */
+.bounce {
+    background-color: #e65386;
+    animation: bounce 1s ease-in-out infinite alternate;
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-35px);
+    }
+}
+
+/* Animation 3: Change colors */
+.color-change {
+    background-color: #168044;
+    animation: colorChange 3s linear infinite alternate;
+}
+
+@keyframes colorChange {
+    0% {
+        background-color: #168044;
+    }
+
+    50% {
+        background-color: #e6a23c;
+    }
+
+    100% {
+        background-color: #e65386;
+    }
+}
+
+/* Animation 4: Rotate continuously */
+.rotate {
+    background-color: #1769aa;
+    animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Pause all animations when hovering over a box */
+.box:hover {
+    animation-play-state: paused;
+}

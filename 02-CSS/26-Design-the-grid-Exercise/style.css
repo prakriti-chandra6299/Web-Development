@@ -1,0 +1,125 @@
+
+/*
+IMPORTANT TERMS
+1. display: grid - Creates a grid layout.
+2. grid-template-columns - Defines column sizes.
+3. repeat() - Repeats a column or row pattern.
+4. minmax() - Sets minimum and maximum sizes.
+5. gap - Sets spacing between grid items.
+6. @media - Applies responsive styles.
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #222222;
+    background-color: #ffffff;
+    line-height: 1.5;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px 8%;
+    border-bottom: 1px solid #dddddd;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #1769aa;
+}
+
+.header p {
+    color: #555555;
+}
+
+.intro {
+    text-align: center;
+    padding: 45px 20px 30px;
+}
+
+.intro h1 {
+    margin-bottom: 10px;
+    font-size: 32px;
+}
+
+.intro p {
+    color: #666666;
+}
+
+.download-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.card {
+    text-align: center;
+    padding: 25px 15px;
+    background-color: #f4f6f8;
+    border-radius: 8px;
+}
+
+.card h2 {
+    margin-bottom: 8px;
+}
+
+.card p {
+    margin-bottom: 20px;
+    color: #666666;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 14px;
+    background-color: #168044;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.button:hover {
+    background-color: #106333;
+}
+
+footer {
+    text-align: center;
+    padding: 25px 15px;
+    margin-top: 20px;
+    color: #666666;
+}
+
+/* Tablet */
+@media (max-width: 750px) {
+    .download-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .download-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .intro h1 {
+        font-size: 26px;
+    }
+
+    .header {
+        justify-content: center;
+    }
+}

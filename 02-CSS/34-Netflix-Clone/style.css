@@ -1,0 +1,696 @@
+
+/* IMPORTANT TERMS:
+   CSS variables, :root, var(),
+   font-family, line-height
+*/
+
+:root {
+    --netflix-red: #e50914;
+    --page-background: #000;
+    --card-background: #181818;
+    --text-primary: #fff;
+    --text-secondary: #b3b3b3;
+
+    --section-width: 85%;
+    --section-max-width: 1200px;
+
+    --section-spacing: 50px;
+    --card-gap: 20px;
+    --card-radius: 10px;
+}
+
+/* IMPORTANT TERMS:
+   CSS selectors, flexbox, grid, gradients,
+   background, responsive design, media queries
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--page-background);
+    color: var(--text-primary);
+    line-height: 1.5;
+}
+
+
+
+.hero {
+    min-height: 650px;
+    position: relative;
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.75) 0%,
+            rgba(0, 0, 0, 0.45) 45%,
+            #000 100%
+        ),
+        url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=1600")
+        center / cover no-repeat;
+    border-bottom: 6px solid #333;
+}
+
+
+.navbar {
+    width: 85%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    color: var(--netflix-red);
+    font-size: 2rem;
+    font-weight: 900;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+select {
+    padding: 8px 12px;
+    background: #181818;
+    color: white;
+    border: 1px solid #777;
+    border-radius: 4px;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    background: #e50914;
+    font-weight: bold;
+}
+
+.sign-in {
+    padding: 9px 16px;
+}
+
+
+.hero-content {
+    width: 90%;
+    max-width: 850px;
+    margin: 115px auto 0;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+
+.hero-content h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.hero-content .membership {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.email-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.email-form input {
+    width: 60%;
+    max-width: 420px;
+    min-width: 0;
+    padding: 16px;
+    background: #181818cc;
+    border: 1px solid #888;
+    border-radius: 4px;
+    color: white;
+    font-size: 1rem;
+}
+
+.email-form button {
+    padding: 14px 22px;
+    font-size: 1.1rem;
+}
+
+.movies {
+    width: var(--section-width);
+    max-width: var(--section-max-width);
+    margin: 40px auto;
+}
+
+.movies h2 {
+    margin-bottom: 22px;
+    font-size: 1.7rem;
+}
+
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+}
+
+/* IMPORTANT TERMS:
+   img, object-fit, border-radius, overflow, hover transform
+*/
+
+
+/* IMPORTANT TERMS:
+   object-fit, box-shadow, transform,
+   transition, overflow, border-radius
+*/
+
+.poster {
+    height: 280px;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #181818;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.45);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.poster img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.poster:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.7);
+}
+
+.poster:hover img {
+    transform: scale(1.06);
+}
+
+.poster-one {
+    background: linear-gradient(135deg, #ef4444, #450a0a);
+}
+
+.poster-two {
+    background: linear-gradient(135deg, #2563eb, #111827);
+}
+
+.poster-three {
+    background: linear-gradient(135deg, #9333ea, #2e1065);
+}
+
+.poster-four {
+    background: linear-gradient(135deg, #d97706, #431407);
+}
+
+.movie-card h3 {
+    margin-top: 12px;
+    font-size: 1rem;
+}
+
+footer {
+    border-top: 1px solid #333;
+    padding: 25px;
+    text-align: center;
+    color: #aaa;
+}
+
+@media (max-width: 700px) {
+    .navbar,
+    .movies {
+        width: 92%;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .hero-content {
+        margin-top: 75px;
+    }
+
+    .movie-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .poster {
+        min-height: 220px;
+    }
+
+    .email-form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .email-form input,
+    .email-form button {
+        width: 100%;
+        max-width: 420px;
+    }
+}
+
+@media (max-width: 380px) {
+    .nav-actions {
+        gap: 6px;
+    }
+
+    select {
+        max-width: 95px;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+}
+/* IMPORTANT TERMS:
+   position: relative, absolute positioning,
+   z-index, linear-gradient, hover effects
+*/
+
+/* Trending section */
+.trending {
+   width: var(--section-width);
+    max-width: var(--section-max-width);
+    margin: 50px auto;
+}
+
+.trending h2 {
+    font-size: 1.7rem;
+    margin-bottom: 25px;
+}
+
+.trending-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 25px;
+}
+
+
+/* IMPORTANT TERMS:
+   position, z-index, text-shadow,
+   transform, overflow, box-shadow
+*/
+
+.trending-card {
+    position: relative;
+    min-width: 0;
+    padding-left: 12px;
+}
+
+.trending-poster {
+    height: 280px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.trending-card:hover .trending-poster {
+    transform: scale(1.04);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
+}
+
+.rank {
+    position: absolute;
+    left: -2px;
+    bottom: 35px;
+    z-index: 1;
+    font-size: 4.5rem;
+    font-weight: 900;
+    line-height: 1;
+    color: #fff;
+    -webkit-text-stroke: 2px #111;
+    text-shadow: 3px 3px 6px #000;
+    pointer-events: none;
+}
+
+.trending-card h3 {
+    margin-top: 12px;
+    font-size: 1rem;
+    color: #f2f2f2;
+}
+
+.trending-one {
+    background: linear-gradient(135deg, #b91c1c, #240707);
+}
+
+.trending-two {
+    background: linear-gradient(135deg, #4338ca, #111827);
+}
+
+.trending-three {
+    background: linear-gradient(135deg, #047857, #052e16);
+}
+
+.trending-four {
+    background: linear-gradient(135deg, #9333ea, #1f0a30);
+}
+
+/* Responsive layout */
+@media (max-width: 700px) {
+    .trending {
+        width: 92%;
+    }
+
+    .trending-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .trending-poster {
+        height: 220px;
+    }
+}
+
+/* IMPORTANT TERMS:
+   CSS Grid, gap, padding, border-radius,
+   linear-gradient, flexbox
+*/
+
+/* More Reasons to Join */
+.reasons {
+    width: var(--section-width);
+    max-width: var(--section-max-width);
+    margin: 55px auto;
+}
+
+.reasons h2 {
+    font-size: 1.7rem;
+    margin-bottom: 22px;
+}
+
+.reasons-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 15px;
+}
+
+.reason-card {
+    min-height: 240px;
+    padding: 22px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    background: linear-gradient(145deg, #272044, #17112a 75%);
+    border: 1px solid #393044;
+}
+
+.reason-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 14px;
+}
+
+.reason-card p {
+    color: #c9c5d2;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.reason-icon {
+    display: block;
+    text-align: right;
+    font-size: 2.2rem;
+    margin-top: 20px;
+}
+
+/* Responsive layout */
+@media (max-width: 900px) {
+    .reasons {
+        width: 92%;
+    }
+
+    .reasons-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .reasons-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .reason-card {
+        min-height: 190px;
+    }
+}
+
+/* IMPORTANT TERMS:
+   details, summary, cursor, border,
+   padding, transition
+*/
+
+/* FAQ section */
+.faq {
+    width: var(--section-width);
+    max-width: var(--section-max-width);
+    margin: 55px auto;
+}
+
+.faq h2 {
+    font-size: 1.7rem;
+    margin-bottom: 22px;
+}
+
+
+/* IMPORTANT TERMS:
+   details, summary, :hover, border,
+   transition, padding, line-height
+*/
+
+/* FAQ panels */
+.faq-item {
+    margin-bottom: 10px;
+    background: #2d2d2d;
+    border: 1px solid #383838;
+    transition: background-color 0.25s ease;
+}
+
+.faq-item:hover {
+    background: #414141;
+}
+
+.faq-item summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 24px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    list-style: none;
+}
+
+/* Hide the browser's default marker */
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+/* Add a plus or minus symbol */
+.faq-item summary::after {
+    content: "+";
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1;
+}
+
+.faq-item[open] summary::after {
+    content: "×";
+}
+
+.faq-item p {
+    padding: 0 24px 24px;
+    color: #f0f0f0;
+    line-height: 1.6;
+    font-size: 1.05rem;
+}
+
+@media (max-width: 700px) {
+    .faq-item summary {
+        padding: 18px;
+        font-size: 1rem;
+    }
+
+    .faq-item p {
+        padding: 0 18px 18px;
+        font-size: 0.95rem;
+    }
+}
+
+
+@media (max-width: 700px) {
+    .faq {
+        width: 92%;
+    }
+
+    .faq-item summary {
+        padding: 18px;
+        font-size: 1rem;
+    }
+}
+
+/* IMPORTANT TERMS:
+   Flexbox, flex-wrap, gap, text-decoration,
+   hover effects, responsive design
+*/
+
+/* Website footer */
+.site-footer {
+    width: 85%;
+    max-width: 1200px;
+    margin: 60px auto 0;
+    padding: 35px 0 25px;
+    border-top: 1px solid #333;
+    color: #b3b3b3;
+}
+
+.footer-question {
+    margin-bottom: 28px;
+    font-size: 1rem;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 35px;
+    margin-bottom: 30px;
+}
+
+.footer-links a {
+    width: calc(25% - 27px);
+    color: #b3b3b3;
+    font-size: 0.9rem;
+    text-decoration: underline;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+.footer-language {
+    margin-bottom: 22px;
+}
+
+.footer-country {
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+}
+
+.footer-note {
+    font-size: 0.8rem;
+    color: #888;
+}
+
+@media (max-width: 700px) {
+    .site-footer {
+        width: 92%;
+    }
+
+    .footer-links {
+        gap: 20px;
+    }
+
+    .footer-links a {
+        width: calc(50% - 10px);
+    }
+}
+
+/* IMPORTANT TERMS:
+   :hover, :focus, :focus-visible,
+   transition, outline, cursor
+*/
+
+/* Smooth button transitions */
+button {
+    transition: background-color 0.25s ease,
+                transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #c11119;
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+/* Keyboard focus for buttons */
+button:focus-visible {
+    outline: 2px solid white;
+    outline-offset: 3px;
+}
+
+/* Email input focus */
+.email-form input {
+    transition: border-color 0.25s ease,
+                background-color 0.25s ease;
+}
+
+.email-form input:focus {
+    outline: none;
+    border-color: white;
+    background-color: #222;
+}
+
+/* Language selector focus */
+select:focus-visible {
+    outline: 2px solid white;
+    outline-offset: 3px;
+}
+
+.movie-card h3 {
+    margin-top: 14px;
+    font-size: 1rem;
+    color: #f2f2f2;
+    font-weight: 600;
+    transition: color 0.25s ease;
+}
+
+.movie-card:hover h3 {
+    color: #e50914;
+}
+
+/* IMPORTANT TERMS:
+   :hover, transform, box-shadow,
+   transition, border-color
+*/
+
+/* Feature card hover effects */
+.reason-card {
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.reason-card:hover {
+    transform: translateY(-6px);
+    border-color: #62516f;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Make the icon respond to hover */
+.reason-icon {
+    transition: transform 0.3s ease;
+}
+
+.reason-card:hover .reason-icon {
+    transform: scale(1.15);
+}

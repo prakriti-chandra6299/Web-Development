@@ -1,0 +1,35 @@
+
+/*
+CSS GRID - IMPORTANT PROPERTIES
+
+1. display: grid
+   Enables CSS Grid layout.
+
+2. grid-template-columns
+   Defines the columns.
+
+3. gap
+   Adds space between grid items.
+
+4. padding
+   Adds space inside an element.
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+.box {
+    background-color: lightblue;
+    border: 1px solid black;
+    padding: 30px;
+    font-size: 20px;
+}

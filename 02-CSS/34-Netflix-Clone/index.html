@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- IMPORTANT TERMS:
+         HTML structure, header, main, section,
+         navigation, buttons, semantic elements
+    -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Hero section -->
+    <header class="hero">
+        <nav class="navbar">
+            <a href="#" class="logo">NETFLIX</a>
+
+            <div class="nav-actions">
+                <select aria-label="Choose language">
+                    <option>English</option>
+                    <option>हिन्दी</option>
+                </select>
+
+                <button class="sign-in">Sign In</button>
+            </div>
+        </nav>
+
+        <div class="hero-content">
+            <h1>Unlimited movies, TV shows and more</h1>
+            <p>Watch anywhere. Cancel anytime.</p>
+            <p class="membership">
+                Ready to watch? Enter your email to create or restart your membership.
+            </p>
+
+            <form class="email-form">
+                <input
+                    type="email"
+                    placeholder="Email address"
+                    aria-label="Email address"
+                    required
+                >
+                <button type="submit">Get Started &gt;</button>
+            </form>
+        </div>
+    </header>
+
+    <!-- Movie section -->
+    <main>
+        <section class="movies">
+            <h2>Popular on Netflix</h2>
+
+            <div class="movie-grid">
+                <article class="movie-card">
+                    <div class="poster">
+                        <img
+                         src="https://image.tmdb.org/t/p/w500/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg"
+                            alt="Oppenheimer movie poster">
+                    </div>   
+                    <h3>Adventure</h3>
+                </article>
+
+                <article class="movie-card">
+                    <div class="poster">
+                        <img 
+                        src="https://image.tmdb.org/t/p/w500/8b8R8l88Qje9dn9OE8PY05Nxl1X.jpg"
+                            alt="Action movie poster">
+                    </div>
+                    <h3>Action</h3>
+                </article>
+
+                <article class="movie-card">
+                    <div class="poster">
+                       
+                            <img
+                                src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=500"
+                                alt="Cinema screen representing drama">
+                            
+                    </div>
+                    <h3>Drama</h3>
+                </article>
+
+                <article class="movie-card">
+                    <div class="poster">
+                        <img 
+                            src="https://images.unsplash.com/photo-1509248961158-e54f6934749c?w=500"
+                            alt="Dark cinematic scene representing thriller" >                         
+                    </div>
+                    <h3>Thriller</h3>
+                </article>
+            </div>
+        </section>
+        <!-- Trending Now section -->
+<section class="trending">
+    <h2>Trending Now</h2>
+
+    <div class="trending-grid">
+        <article class="trending-card">
+            <span class="rank">1</span>
+            <div class="trending-poster trending-one"></div>
+            <h3>Red Horizon</h3>
+        </article>
+
+        <article class="trending-card">
+            <span class="rank">2</span>
+            <div class="trending-poster trending-two"></div>
+            <h3>Dark Kingdom</h3>
+        </article>
+
+        <article class="trending-card">
+            <span class="rank">3</span>
+            <div class="trending-poster trending-three"></div>
+            <h3>Last Mission</h3>
+        </article>
+
+        <article class="trending-card">
+            <span class="rank">4</span>
+            <div class="trending-poster trending-four"></div>
+            <h3>Hidden Truth</h3>
+        </article>
+    </div>
+</section>
+
+<!-- More Reasons to Join section -->
+<section class="reasons">
+    <h2>More Reasons to Join</h2>
+
+    <div class="reasons-grid">
+        <article class="reason-card">
+            <h3>Enjoy on your TV</h3>
+            <p>Watch on smart TVs, gaming consoles and streaming devices.</p>
+            <span class="reason-icon">📺</span>
+        </article>
+
+        <article class="reason-card">
+            <h3>Download your shows</h3>
+            <p>Save your favourite shows and watch them offline.</p>
+            <span class="reason-icon">⬇️</span>
+        </article>
+
+        <article class="reason-card">
+            <h3>Watch everywhere</h3>
+            <p>Stream movies and shows on your phone, tablet or laptop.</p>
+            <span class="reason-icon">📱</span>
+        </article>
+
+        <article class="reason-card">
+            <h3>Create profiles for kids</h3>
+            <p>Give children their own space to enjoy family-friendly content.</p>
+            <span class="reason-icon">✨</span>
+        </article>
+    </div>
+</section>
+
+<!-- Frequently Asked Questions -->
+<section class="faq">
+    <h2>Frequently Asked Questions</h2>
+
+    <details class="faq-item">
+        <summary>What is Netflix?</summary>
+        <p>Netflix is a streaming service for movies, TV shows and more.</p>
+    </details>
+
+    <details class="faq-item">
+        <summary>How much does Netflix cost?</summary>
+        <p>Plans and prices depend on your country and subscription options.</p>
+    </details>
+
+    <details class="faq-item">
+        <summary>Where can I watch?</summary>
+        <p>You can watch on supported TVs, computers, tablets and phones.</p>
+    </details>
+
+    <details class="faq-item">
+        <summary>How do I cancel?</summary>
+        <p>This practice clone doesn't manage real subscriptions or cancellations.</p>
+    </details>
+
+    <details class="faq-item">
+        <summary>What can I watch?</summary>
+        <p>Explore the movie cards above to see our sample categories.</p>
+    </details>
+</section>
+
+    </main>
+
+   
+<!-- Website footer -->
+<footer class="site-footer">
+    <p class="footer-question">
+        Questions? Contact us.
+    </p>
+
+    <div class="footer-links">
+        <a href="#">FAQ</a>
+        <a href="#">Help Centre</a>
+        <a href="#">Account</a>
+        <a href="#">Media Centre</a>
+        <a href="#">Investor Relations</a>
+        <a href="#">Jobs</a>
+        <a href="#">Ways to Watch</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Privacy</a>
+        <a href="#">Cookie Preferences</a>
+        <a href="#">Corporate Information</a>
+        <a href="#">Contact Us</a>
+    </div>
+
+    <select class="footer-language" aria-label="Choose footer language">
+        <option>English</option>
+        <option>हिन्दी</option>
+    </select>
+
+    <p class="footer-country">Netflix Clone — India</p>
+
+    <p class="footer-note">
+        Created for learning HTML and CSS. Not affiliated with Netflix.
+    </p>
+</footer>
+
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+
+/*
+IMPORTANT TERMS
+1. display: flex - Arranges items using Flexbox.
+2. justify-content - Controls item distribution.
+3. align-items - Aligns items vertically in this navbar.
+4. gap - Sets space between navigation links.
+5. flex-wrap - Allows items to move onto another line.
+6. :hover - Changes an element's appearance on hover.
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #222;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px 6%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px #00000015;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #5b4bdb;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    color: #5b4bdb;
+}
+
+.login-btn {
+    padding: 10px 18px;
+    background-color: #5b4bdb;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.login-btn:hover {
+    background-color: #4032b0;
+}
+
+main {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+main h1 {
+    margin-bottom: 15px;
+}
+
+main p {
+    color: #666666;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 600px) {
+    .navbar {
+        justify-content: center;
+    }
+
+    .nav-links {
+        justify-content: center;
+        gap: 15px;
+    }
+}

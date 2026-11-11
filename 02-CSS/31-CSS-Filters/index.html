@@ -1,0 +1,112 @@
+
+<!--
+IMPORTANT TERMS
+1. CSS filter: Applies visual effects to an element.
+2. blur(): Makes an image look blurry.
+3. brightness(): Makes an image lighter or darker.
+4. contrast(): Adjusts the difference between light and dark areas.
+5. grayscale(): Removes colors.
+6. sepia(): Creates a warm, brown-toned effect.
+7. invert(): Inverts image colors.
+8. opacity(): Controls transparency.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Filters</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>CSS Image Filters</h1>
+    <p>Compare the different effects applied to the same image.</p>
+
+    <main class="gallery">
+
+        <article class="card">
+            <h2>Original</h2>
+            <img
+                class="original"
+                src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=600"
+                alt="Mountain landscape"
+            >
+            <p>No filter applied</p>
+        </article>
+
+        <article class="card">
+            <h2>Blur</h2>
+            <img
+                class="blur"
+                src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=600"
+                alt="Blurred mountain landscape"
+            >
+            <p>filter: blur(3px)</p>
+        </article>
+
+        <article class="card">
+            <h2>Brightness</h2>
+            <img
+                class="brightness"
+                src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=600"
+                alt="Bright mountain landscape"
+            >
+            <p>filter: brightness(140%)</p>
+        </article>
+
+        <article class="card">
+            <h2>Grayscale</h2>
+            <img
+                class="grayscale"
+                src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=600"
+                alt="Black and white mountain landscape"
+            >
+            <p>filter: grayscale(100%)</p>
+        </article>
+
+        <article class="card">
+            <h2>Sepia</h2>
+            <img
+                class="sepia"
+                src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=600"
+                alt="Sepia mountain landscape"
+            >
+            <p>filter: sepia(100%)</p>
+        </article>
+
+        <article class="card">
+            <h2>Contrast</h2>
+            <img
+                class="contrast"
+                src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=600"
+                alt="High contrast mountain landscape"
+            >
+            <p>filter: contrast(150%)</p>
+        </article>
+
+        <article class="card">
+            <h2>Invert</h2>
+            <img
+                class="invert"
+                src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=600"
+                alt="Color-inverted mountain landscape"
+            >
+            <p>filter: invert(100%)</p>
+        </article>
+
+        <article class="card">
+            <h2>Opacity</h2>
+            <img
+                class="opacity"
+                src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=600"
+                alt="Faded mountain landscape"
+            >
+            <p>filter: opacity(50%)</p>
+        </article>
+
+    </main>
+
+</body>
+</html>

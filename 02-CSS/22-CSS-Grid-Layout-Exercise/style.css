@@ -1,0 +1,70 @@
+
+/*
+CSS GRID LAYOUT - IMPORTANT PROPERTIES
+
+1. display: grid
+   Enables Grid layout.
+
+2. grid-template-columns
+   Defines the columns.
+
+3. gap
+   Adds space between grid items.
+
+4. grid-column
+   Controls how many columns an item occupies.
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header,
+.navbar,
+.main-content,
+.sidebar,
+.footer {
+    padding: 20px;
+    text-align: center;
+}
+
+.header {
+    background-color: steelblue;
+    color: white;
+}
+
+.navbar {
+    background-color: lightblue;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+    padding: 10px;
+}
+
+.main-content {
+    background-color: lightgreen;
+    min-height: 200px;
+}
+
+.sidebar {
+    background-color: lightyellow;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .content {
+        grid-template-columns: 1fr;
+    }
+}

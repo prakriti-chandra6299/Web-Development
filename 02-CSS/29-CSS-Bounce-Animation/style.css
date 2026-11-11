@@ -1,0 +1,64 @@
+
+/*
+IMPORTANT TERMS
+1. @keyframes bounce: Defines the bounce movement.
+2. translateY(): Moves the ball vertically.
+3. animation: Applies the animation to the ball.
+4. infinite: Repeats the animation continuously.
+5. ease-in-out: Starts and ends the movement smoothly.
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f6f9;
+    padding: 30px 15px;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+p {
+    color: #555555;
+}
+
+.stage {
+    width: 300px;
+    height: 300px;
+    margin: 40px auto 20px;
+    border-bottom: 4px solid #333333;
+    position: relative;
+}
+
+.ball {
+    width: 60px;
+    height: 60px;
+    background-color: #6655dd;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 30px);
+
+    animation: bounce 1s ease-in-out infinite alternate;
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-200px);
+    }
+}
+
+.hint {
+    margin-top: 20px;
+}

@@ -1,0 +1,78 @@
+
+/*
+IMPORTANT TERMS
+1. transform: rotate(45deg) - Rotates an element.
+2. transform: scale(1.2) - Enlarges an element.
+3. transform: translateX(20px) - Moves an element horizontally.
+4. transform: skew(10deg) - Tilts an element.
+5. transform-origin: Changes the transformation point.
+6. transition: Makes a change happen smoothly.
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f6f9;
+    padding: 30px 15px;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 40px 0;
+}
+
+.box {
+    width: 120px;
+    height: 120px;
+    background-color: #6655dd;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+.rotate {
+    transform: rotate(85deg);
+}
+
+.scale {
+    transform: scale(1.15);
+}
+
+.translate {
+    transform: translateY(15px);
+}
+
+.skew {
+    transform: skew(-10deg);
+}
+
+.hover-box {
+    background-color: #e65386;
+    transition: transform 0.4s ease;
+}
+
+.hover-box:hover {
+    transform: rotate(10deg) scale(1.1);
+}
